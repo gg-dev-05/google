@@ -21,7 +21,7 @@ body {
 .cell {
   /* background-color: red; */
   aspect-ratio: 1;
-  cursor: pointer;
+  cursor: none;
 }
 .animate {
   /* border: 1px solid red; */
