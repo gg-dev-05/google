@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #1f1f1f;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+#grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(100, 1fr);
+  gap: 0;
+}
+.cell {
+  /* background-color: red; */
+  aspect-ratio: 1;
+  cursor: pointer;
+}
+.animate {
+  /* border: 1px solid red; */
+  animation: 1.2s bgrandom forwards;
+  /* animation: bord 1s forwards ease-in-out; */
+}
+@keyframes bord {
+  0% {
+    border: 1px solid linear_;
+  }
+  100% {
+    border: 0px solid #1f1f1f;
+  }
+}
+
+@keyframes bgrandom {
+  0% {
+    background: linear-gradient(90deg, #4285f4, #00a1f1);
+  }
+  25% {
+    background: linear-gradient(90deg, #34a853, #7cbb00);
+  }
+
+  50% {
+    background: linear-gradient(90deg, #fbbc05, #ffbb00);
+  }
+  100% {
+    background: linear-gradient(90deg, #ea4335, #f65314);
+  }
+}
